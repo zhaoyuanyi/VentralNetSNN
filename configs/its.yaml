@@ -1,0 +1,22 @@
+# RESIDE ITS (indoor dehazing)
+dataset: its
+data_root: ./data/RESIDE-IN
+
+# optimisation
+epochs: 200
+batch: 4
+lr: 2.0e-4
+ssim_weight: 0.15
+perceptual_weight: 0.05
+
+# network
+img_size: 256
+T: 4
+lgn_ch: 16
+v1_ch: 32
+v2_ch: 64
+v4_ch: 128
+
+# reproducibility (seed: model initialisation; split_seed: data order and augmentation)
+seed: 42
+split_seed: 2026
